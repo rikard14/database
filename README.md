@@ -3,8 +3,9 @@ database table
 Name: Recept
 
 | id | matnamn | recept |
-| 1 | koka makaroner | Koka upp vatten ...|
-| 2 | koka te | Koka upp vatten ...|
+| --- | --- | --- |
+| 1 | koka makaroner | Koka upp vatten ... |
+| 2 | koka te | Koka upp vatten ... |
 
 ###SQL to create database and table
 You have to create the database and the table. Use commands below.

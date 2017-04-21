@@ -12,14 +12,17 @@ SQL to create database and table
 You have to create the database and the table. Use commands below.
 
 -- Skapa databas
+
 CREATE DATABASE Webbutveckling
 
 -- Välj utf-8 ??? hur ? TODO
 
 -- Välj den databas som ska användas
+
 USE Webbutveckling
 
 -- Skapa tabellen Recept
+
 CREATE TABLE Recept
 (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -28,6 +31,7 @@ CREATE TABLE Recept
 );
 
 -- Lägg till rader i tabellen Recept
+
 INSERT INTO Recept (matnamn, recept) VALUES ('Koka makaroner', 'Koka upp vatten i en stor kastrull. Häll i 70 gram pasta per person. Koka i 10 minuter. Häll av i drukslag.');
 
 INSERT INTO Recept (matnamn, recept) VALUES ('Koka te', 'Koka upp vatten. Häll i en mugg. Tag teblad i en tetång. Ställ tången i muggen med vatten. Låt stå i 5 minuter.');
@@ -36,15 +40,19 @@ More examples using SQL
 ----------------
 
 -- Välj alla rader i tabellen Recept
+
 SELECT * FROM Recept;
 
 -- Välj den första raden
+
 SELECT * FROM Recept WHERE id=0;
 
 -- Välj raden för koka te
+
 SELECT * FROM Recept WHERE matnamn='koka te';
 
 -- Välj recept från raden koka te
+
 SELECT recept FROM Recept WHERE matnamn='koka te';
 
 index.php
